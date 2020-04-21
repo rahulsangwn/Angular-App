@@ -8,6 +8,14 @@
     <li class="list-group-item">Display the result on the page via string interpolation</li>
   </ul>
   <div class="container your-code">
-    <h6>Remove this &lt;h3&gt; and create your HTML here</h6>
+    <!-- <h6>Remove this &lt;h3&gt; and create your HTML here</h6> -->
+    <div class="input-group input-group-lg">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="inputGroup-sizing-lg">Input</span>
+      </div>
+      <input #data type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm" placeholder="Enter text Here" (input)="onKeyPress(data.value)">
+    </div>
+    <br>
+    <div class="list-group-item active">{{res}}</div>
   </div>
 </div>

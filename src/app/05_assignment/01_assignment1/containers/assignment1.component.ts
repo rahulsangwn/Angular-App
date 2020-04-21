@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./assignment1.component.css']
 })
 export class Assignment1Component {
-
+  res: any
+  onKeyPress(data: string): void {  
+    this.res = data
+    console.log(data);
+  }
 }
